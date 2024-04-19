@@ -1,0 +1,219 @@
+:root {
+  --font: "Verdana", "Geneva", "sans-serif";
+  --font-header: "Times New Roman", serif;
+  --dark-blue: #0e25d1;
+  --light-blue: #59a4e2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font);
+  background: whitesmoke;
+}
+
+#sailio {
+  max-width: 80%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--dark-blue);
+  min-height: 100px;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 40px;
+  font-family: var(--font-header);
+  margin-bottom: 1rem;
+}
+
+/*Navigation*/
+
+.mobile-nav {
+  display: none;
+}
+
+#myLinks {
+  display: none;
+  width: 100%;
+}
+
+#myLinks a {
+  color: white;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+#myLinks a:hover {
+  background-color: rgba(107, 124, 167, 0.3);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0 2rem 0;
+}
+
+nav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+nav ul li {
+  padding: 1rem;
+}
+
+nav ul li:hover {
+  background: rgba(90, 116, 186, 0.3);
+}
+/*ngjyros linket pasi i ke klikuar njer
+a:visited {
+  
+  color: rgba(252, 54, 252, 0.505);
+}
+*/
+
+/* main area*/
+
+main {
+  background: var(--light-blue);
+  color: var(--dark-blue);
+  padding: 1rem 0;
+}
+main h2 {
+  margin-left: 1rem;
+}
+
+#tervetuloa {
+  background: white;
+  color: black;
+  margin: 1rem 0;
+  padding: 2rem;
+  display: flex;
+}
+
+#tervetuloa img {
+  max-width: 200px;
+  margin: 0 1rem;
+  object-fit: cover;
+}
+
+#skills {
+  background: var(--dark-blue);
+  margin: 1rem 0;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  color: var(--dark-blue);
+  min-width: 150px;
+  max-width: 350%;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #e5c2a6;
+  display: flex;
+  min-height: 100px;
+}
+
+#socials {
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+}
+#stuff {
+  flex: 2;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#copy {
+  font-size: 10px;
+  margin-top: 1rem;
+}
+
+/*Mobili */
+
+@media only screen and (max-width: 600px) {
+  #sailio {
+    max-width: 100%;
+  }
+
+  #tervetuloa {
+    flex-direction: column;
+  }
+  #tervetuloa img {
+    max-width: 100%;
+    margin: 1rem;
+  }
+
+  #skills {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile-nav {
+    display: none;
+  }
+}

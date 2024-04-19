@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <script
+      src="https://kit.fontawesome.com/1e015f326f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./reset.css" type="text/css" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio sivu</title>
+  </head>
+  <body>
+    <div id="sailio">
+      <!-- Pjesa kreut-->
+      <header>
+        <nav>
+          <div class="menu">
+            <ul>
+              <li><a href="#index.html">Etusivu</a></li>
+              <li><a href="#">Projektit</a></li>
+              <li><a href="#">Ota yhteyttä</a></li>
+            </ul>
+          </div>
+          <!-- Nav menu-->
+
+          <div class="mobile-nav">
+            <a href="javascript:void(0);" class="icon" onclick="MyFunction()"
+              ><i class="fa-solid fa-bars"></i
+            ></a>
+          </div>
+
+          <div id="myLinks">
+            <a href="#index.html">Etusivu</a>
+            <a href="#">Projektit</a>
+            <a href="#">Ota yhteyttä</a>
+          </div>
+          <!-- Nav menu ends-->
+        </nav>
+
+        <h1>Oma sivuni</h1>
+      </header>
+
+      <!-- Pjesa main e faqes -->
+      <main>
+        <h2>Tervetuloa!</h2>
+        <section id="tervetuloa">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
+            sint consectetur eos repellendus quisquam ducimus quis, officiis
+            praesentium amet culpa sequi neque. Quasi enim dignissimos quis
+            molestias voluptatibus nobis eligendi. <br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            distinctio voluptates modi beatae iure assumenda suscipit explicabo.
+            Dicta sequi excepturi, provident, voluptatibus maxime possimus aut
+            hic recusandae, ab nisi pariatur.
+          </p>
+          <img src="./assets/amo.jpeg" alt="tervetuloa photo" />
+        </section>
+
+        <!-- skills card -->
+
+        <h2>Skills</h2>
+        <section id="skills">
+          <div class="card">
+            <h3>Skill</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+              itaque pariatur praesentium ipsum, voluptates fuga incidunt neque
+            </p>
+          </div>
+          <div class="card">
+            <h3>Skill</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+              itaque pariatur praesentium ipsum, voluptates fuga incidunt neque
+            </p>
+          </div>
+          <div class="card">
+            <h3>Skill</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+              itaque pariatur praesentium ipsum, voluptates fuga incidunt neque
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- Pjesa e footer-->
+
+      <footer>
+        <section id="socials">
+          <p>Find me here</p>
+        </section>
+
+        <section id="stuff">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Architecto, maiores!
+          </p>
+
+          <p id="copy">(c) Jasmina B 2024</p>
+        </section>
+      </footer>
+    </div>
+
+    <!--Toggle menu script-->
+    <script>
+      function MyFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
