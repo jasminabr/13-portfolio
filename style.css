@@ -191,6 +191,7 @@ footer {
 
   #skills {
     flex-direction: column;
+    padding: 1rem;
   }
 
   .card {
@@ -215,5 +216,19 @@ footer {
 @media only screen and (min-width: 600px) {
   .mobile-nav {
     display: none;
+  }
+  .menu {
+    display: none;
+  }
+
+  #skills {
+    flex-direction: column;
+    padding: 0 0 1rem 0;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
   }
 }
